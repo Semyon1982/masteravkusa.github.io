@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <style>
+        @font-face {
+            font-family: 'Roboto Condensed';
+            src: url('fonts/RobotoCondensed-Regular.ttf');
+            font-weight: 400;
+        }
+        @font-face {
+            font-family: 'Roboto Condensed';
+            src: url('fonts/RobotoCondensed-Bold.ttf');
+            font-weight: 700;
+        }
+        body {
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        .container {
+            max-width: 80%; /* Adjust the width to 80% of the screen */
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-info {
+            margin-bottom: 20px;
+        }
+        .contact-info i {
+            margin-right: 10px;
+        }
+        .working-hours {
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 100%; /* Set the width to 100% of the screen */
+            height: auto;
+            margin-bottom: 20px;
+            object-fit: cover;
+        }
+        /* Add this CSS to make the layout responsive */
+        @media (max-width: 768px) {
+            .container {
+                max-width: 90%; /* Adjust the width to 90% for mobile devices */
+            }
+        }
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .container {
+                max-width: 80%; /* Adjust the width to 80% for tablet devices */
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <img class="logo" src="images/logo.jpg" alt="Логотип">
+    <h1>Контакты</h1>
+    <div class="contact-info">
+        <i class="fas fa-phone"></i> <a href="tel:+79141018113">+7914-101-81-13</a>
+        <br>
+        <br>
+        <i class="fas fa-envelope"></i> <a href="mailto:masteravkusanrb@gmail.com">masteravkusanrb@gmail.com</a>
+        <br>
+        <br>
+        <i class="fas fa-map-marker-alt"></i> <a href="https://yandex.ru/maps/org/lakomka/109294931836/?from=api-maps&ll=118.338657%2C63.283920&origin=jsapi_2_1_79&z=17.05"> г. Нюрба, ул. Пионерская 39в, здание магазина "Лакомка"</a>
+        <br><br>
+    </div>
+    <div class="working-hours">
+        <i class="fas fa-clock"></i> Время работы: Ежедневно с 09.00 до 18.00
+    </div>
+    <p>Заказы принимаются до 18.00. Доставляем в течение 60 минут!</p>
+    <p>Вы можете оплатить заказ через мобильный банк либо наличными через курьера.</p>
+</div>
+</body>
+</html>

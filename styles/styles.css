@@ -1,0 +1,142 @@
+/* Существующие стили */
+/* ... */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px 0; /* Отступ для навигации */
+    background-color: #f8f8f8; /* Цвет фона для навигации */
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+    margin: 0 20px;
+}
+
+.nav-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.nav-item span {
+    font-size: 12px;
+}
+
+/* Адаптивные стили для навигации */
+@media (max-width: 768px) {
+    .nav-item img {
+        width: 25px;
+        height: 25px;
+    }
+    
+    .nav-item span {
+        font-size: 10px;
+    }
+}
+
+.header {
+    width: 95%;
+    height: 50px;
+    background-color: #fff; /* Изменить цвет фона на белый */
+    color: #333; /* Изменить цвет текста на темно-серый */
+    padding: 10px;
+    text-align: center; /* Центрирование текста заголовка */
+}
+
+.logo {
+    width: 100%;
+    height: 100px; /* Высота логотипа */
+    margin-bottom: 20px; /* Отступ снизу для логотипа */
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px; /* Отступ для меню */
+    margin-top: 40px; /* Отступ сверху для меню */
+    flex-grow: 1; /* Позволить меню расти и заполнять доступное пространство */
+}
+
+.item {
+    margin: 20px;
+    width: calc((100% - 40px) / 2); /* Вычисление ширины в зависимости от размера экрана */
+    height: 100px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    flex-grow: 1; /* Позволить каждому элементу расти и заполнять доступное пространство */
+}
+
+.item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 1%;
+}
+
+.item h3 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.item p {
+    font-size: 12px;
+    color: #666;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .item {
+        flex-basis: 41%; /* Ширина элементов для мобильных устройств */
+        margin: 2px; /* Отступ между элементами для мобильных устройств */
+    }
+}
+
+/* Адаптация для планшетов */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .item {
+        flex-basis: 33.33%; /* Ширина элементов для планшетов */
+        margin: 10px; /* Отступ между элементами для планшетов */
+    }
+}
+
+/* Адаптация для настольных компьютеров */
+@media (min-width: 1025px) {
+    .item {
+        flex-basis: 25%; /* Ширина элементов для настольных компьютеров */
+        margin: 20px; /* Отступ между элементами для настольных компьютеров */
+    }
+}
+
+/* Адаптация для больших настольных компьютеров */
+@media (min-width: 1200px) {
+    .item {
+        flex-basis: 20%; /* Ширина элементов для больших настольных компьютеров */
+        margin: 30px; /* Отступ между элементами для больших настольных компьютеров */
+    }
+}
+
+/* Адаптация для очень больших настольных компьютеров */
+@media (min-width: 1600px) {
+    .item {
+        flex-basis: 16.67%; /* Ширина элементов для очень больших настольных компьютеров */
+        margin: 40px; /* Отступ между элементами для очень больших настольных компьютеров */
+    }
+}
